@@ -1,0 +1,146 @@
+@import "tailwindcss";
+/* @import url('https://fonts.cdnfonts.com/css/general-sans'); */
+@theme {
+  --black-100: "#010103";
+  --black-200: "#0E0E10";
+  --black-300: "#1C1C21";
+  --black-500: "#3A3A49";
+  --black-600: "#1A1A1A";
+  --white-100: "#FFFFFF";
+  --white-800: "#E4E4E6";
+  --white-700: "#D6D9E9";
+  --white-600: "#AFB0B6";
+  --white-500: "#62646C";
+  --breakpoint-sm: 400px;
+  --breakpoint-md: 650px;
+  --breakpoint-lg: 900px;
+}
+* {
+  scroll-behavior: smooth;
+
+  color-scheme: dark;
+}
+
+body {
+  /* background: #010103; */
+  background: #0c0c0c;
+  background: linear-gradient(-90deg, #0c0c0c 0%, #010103 100%);
+  background: -webkit-linear-gradient(-90deg, #0c0c0c 0%, #010103 100%);
+
+  font-family: "General Sans", sans-serif;
+  /* background-color: #0c0c0c; */
+  opacity: 0.96;
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@utility c-space {
+  @apply sm:px-10 px-5;
+}
+
+@utility nav-ul {
+  @apply flex flex-col items-center sm:gap-6 gap-2 sm:flex-row md:gap-4 relative z-20;
+}
+
+@utility nav-li {
+  @apply text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md py-2 max-sm:px-4;
+}
+
+@utility nav-li-a {
+  @apply text-lg hover:text-white transition-colors;
+}
+@utility nav-sidebar {
+  @apply absolute left-0 bg-[#0E0E10] right-0 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden;
+}
+@utility nav-sidebar.open {
+  @apply opacity-100 translate-y-0;
+}
+@utility hero_tag {
+  @apply text-center xl:text-5xl md:text-4xl sm:text-3xl text-xl font-black !leading-normal;
+}
+@utility text-gray_gradient {
+  @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+}
+
+@utility btn {
+  @apply flex gap-2 sm:gap-4 items-center justify-center cursor-pointer p-2 sm:p-4 rounded-md bg-[#1C1C21]  transition-all active:scale-90 text-white sm:mx-auto sm:text-xl text-lg;
+}
+
+@utility btn-ping {
+  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
+}
+
+@utility btn-ping_dot {
+  @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
+}
+
+@utility grid-container {
+  @apply w-full h-full border border-[#1C1C21] bg-[#0E0E10] rounded-lg sm:p-6 p-4 flex flex-col gap-5;
+}
+@utility grid-headtext {
+  @apply text-xl font-semibold mb-2 text-white;
+}
+
+@utility grid-subtext {
+  @apply text-[#afb0b6] text-sm;
+}
+@utility grid-skills {
+  @apply bg-[#fff] text-[#1C1C21] text-[14px] tracking-wider p-1 m-1 border rounded-md hover:bg-[#afb0b6]  transition-all;
+}
+@utility tech-logo {
+  @apply w-10 h-10 rounded-md p-2  backdrop-filter backdrop-blur-lg flex justify-center items-center;
+  background-color: rgba(245, 245, 245, 0.1);
+}
+@utility copy-container {
+  @apply cursor-pointer flex justify-center items-center gap-2;
+}
+@utility sub-font-size {
+  @apply lg:text-[12px] text-[10px];
+}
+
+@utility input-fields {
+  @apply bg-[#1C1C21] py-2 px-4 placeholder:text-[#aaa6c3] placeholder:text-[15px] text-sm text-white rounded-lg outline-none border-none focus:ring-2 focus:ring-[#1C1C21] focus:ring-offset-2;
+}
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
