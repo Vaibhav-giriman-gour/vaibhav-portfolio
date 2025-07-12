@@ -192,6 +192,67 @@ export const socialLinks = [
         },
       ],
     },
+        {
+      title: 'ABN Lookup Proof of Concept: A Journey in Data & Resilience',
+      desc: "A comprehensive full-stack application designed for efficient keyword-based search and retrieval of Australian Business Numbers (ABNs) from a multi-gigabyte government bulk extract. It showcases robust data ingestion, a performant backend API, and a clean, user-friendly React frontend UI, reflecting enterprise-level design principles.",
+      subdesc:
+        [
+        "Built a resilient data ingestion pipeline from multi-GB XML to PostgreSQL.",
+        "Developed a performant Node.js/Express API with search, filters, and pagination.",
+        "Created a modern React UI with Redux Toolkit, React Router, and Tailwind CSS."
+        ],
+      href: 'https://github.com/Vaibhav-giriman-gour/ABN_LookUp_POC',
+      texture: '/textures/project/ABN_LookUP_POC.mp4',
+      logo: '/assets/LMfinance.png',
+      logoStyle: {
+        backgroundColor: '#13202F',
+        border: '0.2px solid #17293E',
+        boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      },
+      spotlight: '/assets/spotlight4.png',
+     tags: [
+        {
+            "id": 1,
+            "name": "React.js",
+            "path": "/assets/react.svg"
+        },
+        {
+            "id": 2,
+            "name": "Node.js",
+            "path": "/assets/nodejs.svg"
+        },
+        {
+            "id": 3,
+            "name": "PostgreSQL",
+            "path": "/assets/postgresql-icon.svg"
+        },
+        {
+            "id": 4,
+            "name": "Express.js",
+            "path": "/assets/expressjs-icon.svg"
+        },
+        {
+            "id": 5,
+            "name": "Redux Toolkit",
+            "path": "/assets/redux.svg"
+        },
+        {
+            "id": 6,
+            "name": "Tailwind CSS",
+            "path": "/assets/tailwindcss.png"
+        },
+        {
+            "id": 7,
+            "name": "Winston",
+            "path": "/assets/winston.png"
+        },
+        {
+            "id": 8,
+            "name": "Axios",
+            "path": "/assets/axios-icon.svg"
+        }
+    ]
+    },
     {
       title: 'Chrome UX Report App',
       desc: 'A full-stack web application that fetches and displays real-world performance metrics from the Chrome UX (CrUX) API based on user-entered URLs. Built with React, Material-UI, Node.js.',
